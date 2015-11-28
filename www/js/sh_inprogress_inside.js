@@ -82,6 +82,13 @@ return false;
 return false;
 });
 
+      $(document).off('click', '#update_cor_but').on('click', '#update_cor_but', function() {
+//sessionStorage.getItem.clear;
+//$.mobile.changePage("index.html", { transition: "none", changeHash: true, reverse: false }); 
+$.mobile.changePage($('#update_cor'), { transition: "none", changeHash: true, reverse: false });
+return false;
+});
+
     $(document).off('click', '#signoutcooiiiq').on('click', '#signoutcooiiiq', function() {
   sessionStorage.clear(); 
    
